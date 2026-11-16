@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#241c38">
+  <meta name="description" content="A magical little couple quiz by Pipo Studio.">
+  <title>A Little Love Story | Pipo Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" id="sky" aria-hidden="true"></div>
+  <div class="moon" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#">✦ PIPO STUDIO</a>
+    <span class="edition">A FAIRYTALE EDITION</span>
+  </header>
+
+  <main class="container">
+    <section class="screen active" id="welcome">
+      <div class="sun-symbol">✺</div>
+      <p class="eyebrow">A LITTLE GAME FOR TWO</p>
+      <h1>A Little<br><em>Love Story</em></h1>
+      <p class="intro">Every little detail tells a story. How well do you really know your special person?</p>
+
+      <div class="names">
+        <label for="playerOne">Your name</label>
+        <input id="playerOne" type="text" maxlength="30" placeholder="Enter your name" autocomplete="given-name">
+        <label for="playerTwo">Your special person's name</label>
+        <input id="playerTwo" type="text" maxlength="30" placeholder="Enter their name" autocomplete="off">
+      </div>
+
+      <button class="main-button" id="startBtn">Begin Our Story <span>✧</span></button>
+      <p class="small-note">A little magic is waiting for you ♡</p>
+    </section>
+
+    <section class="screen" id="quiz">
+      <p class="eyebrow">CHAPTER ONE · THE LITTLE DETAILS</p>
+      <div class="quiz-heading">
+        <h2>How well do<br>you know <em id="personName">them</em>?</h2>
+        <span class="question-count" id="questionCount">01 / 08</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="question-card">
+        <span class="question-icon">✧</span>
+        <h3 id="questionText">Question goes here</h3>
+        <div class="answers" id="answers"></div>
+      </div>
+      <p class="small-note" id="feedback">Choose the answer that feels right ♡</p>
+    </section>
+
+    <section class="screen" id="result">
+      <div class="result-lantern">🏮</div>
+      <p class="eyebrow">AND THEY LIVED A LITTLE HAPPIER</p>
+      <h2>Your little<br><em>love story</em></h2>
+      <div class="score-circle">
+        <strong id="score">0%</strong>
+        <span>YOUR SCORE</span>
+      </div>
+      <h3 id="resultTitle">A beautiful connection!</h3>
+      <p class="result-message" id="resultMessage"></p>
+      <button class="main-button" id="restartBtn">Read Our Story Again ↻</button>
+      <p class="small-note">Made with love by Pipo Studio ✦</p>
+    </section>
+  </main>
+
+  <footer><span>✦</span> A LITTLE MAGIC BY PIPO STUDIO</footer>
+  <script src="script.js"></script>
+</body>
+</html>
